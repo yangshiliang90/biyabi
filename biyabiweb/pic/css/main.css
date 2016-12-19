@@ -1,0 +1,174 @@
+/* CSS Document */
+@charset "utf-8";
+/*@import url("base.css");*/
+
+/*热门推荐*/
+.hotBox{width:668px; height:140px; overflow:hidden; margin:20px 20px 11px 20px; position:relative;}
+.pictureContent{width:680px;overflow:hidden;}
+.pictureContent .pictureMarquee{height:110px;overflow:hidden;}
+.imgList_159_110{width:159px;height:110px;position:relative;float:left;_display:inline; margin:0 11px 0 0;}
+.imgList_159_110 img{width:159px;height:110px;}
+.imgList_159_110 cite{position:absolute;bottom:0;left:0;width:100%;padding:3px 0;background: url(../channel/focusPic.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/channel/focusPic.png*/;color:#fff;font-size:12px;display:block;height:18px;line-height:19px;overflow:hidden;text-align:center;font-style:normal;}
+.pictureBar{position:absolute;top:119px;left:294px;clear:both;/*width:200px;*/height:12px;}
+.pictureBar ul{ clear:both;height:12px;}
+.pictureBar li{float:left;_display:inline;width:12px;height:12px;line-height:9px;text-align:center;color:#aa2116;font-family:Verdana, Arial, Helvetica, sans-serif;margin:0 4px;padding-top:0px;cursor:pointer;background:url(../channel/pictureBarBg.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/channel/pictureBarBg.png*/ no-repeat 0 0;text-indent:-999px;overflow:hidden;}
+.pictureBar li.active{background-position:0 -12px;color:#fff;}
+
+/*.hotActivity{width:666px; overflow:hidden; margin:20px auto; border:1px solid #e5e5e5; background:#f9f9f9;}*/
+.hotActivity{width:666px; overflow:hidden; margin: 0 auto 40px auto;position: relative;top: 20px; border:1px solid #e5e5e5; background:#f9f9f9;}
+.actTit{width:646px; height:30px; overflow:hidden; margin:5px auto 0 auto; line-height:30px; color:#333;}
+.actList{width:648px; overflow:hidden; margin:0 auto 5px auto;}
+.actList li{float:left; width:162px; height:25px; overflow:hidden; line-height:26px;background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -198px 11px;}
+/*.actList li img{float:left; width:3px; height:3px; margin:11px 5px 11px 2px;}*/
+.actList li a{margin-left:13px;}
+
+/*提醒*/
+.remind{width:666px; overflow:hidden; margin:15px auto;}
+.remindSty1{border:1px solid #e5e5e5; background:#f5f5f5;}
+.remindSty2{border:1px solid #f9e7b6; background:#fffdef;}
+.remind dl{width:636px; overflow:hidden; margin:10px auto;}
+.remind dl dt{float:left; width:20px; height:20px; overflow:hidden; margin-right:6px;
+              background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -137px -76px;
+}
+.remind dl dd{/*float:left;*/ /*width:610px;*/ line-height:22px;padding-left: 25px;}
+
+/*搜索部分*/
+.breadBox{width:668px; height:30px; overflow:hidden; margin:15px auto; line-height:30px;}
+.breadBox a{margin:0px 5px;}
+.breadBox span{margin:0px 5px;}
+
+.mainNav{width:668px; height:40px; overflow:hidden; border-bottom:3px solid #f61420; margin:0px auto 15px auto;}
+.mainNav li{float:left; height:40px; overflow:hidden; padding:0px 10px; line-height:40px; font-size:14px;}
+.mainNav li a{color:#666666; cursor:pointer;}
+.mainNav li.curr{background:#f61420;}
+.mainNav li.curr a{color:#ffffff;}
+
+/*商品部分*/
+.shopBox{width:668px; margin:0 auto 35px auto; position:relative;}
+.shopBoxTop{margin-bottom: 20px;}
+.sxIcon{width:39px; height:55px; position:absolute; left:-20px;}
+.tzIcon{width:145px; height:71px; position:absolute; left:440px; top:0px;}
+
+.shopHead{width:668px; overflow:hidden; margin-bottom:20px; border-bottom:1px solid #e5e5e5;}
+.shopHeadCurr{width:645px;  padding-left:23px;}
+.shopHeadCurr p{text-decoration:line-through;}
+.shopHeadCurr span{text-decoration:line-through;}
+.shopTit{width:100%; line-height:30px; color:#333; font-size:20px; font-family:'Arial','Microsoft YaHei'; font-weight:bold;}
+.titH:hover{color:#666666;}
+.shopJia{float:left; line-height:22px; color:#b70000; font-size:16px; font-family:'Arial','Microsoft YaHei'; font-weight:bold;}
+.shopDat{float:right; margin-right:5px; line-height:22px; color:#999; font-size:14px;}
+
+/*.shopCent{width:668px; overflow:hidden;}
+.shopPicBox{float:right; width:183px; overflow:hidden; margin-left:30px;}
+.shopPicBor{width:181px; overflow:hidden; border:1px solid #ffffff;}
+.shopCol{width:182px; height:30px; overflow:hidden; background:#f5f5f5; border-bottom:1px solid #e5e5e5;}
+.shopCol li{float:left; width:80px; height:30px; overflow:hidden; border-right:1px solid #e5e5e5;}
+.shopCol li a{display:block;}
+.shopCol li img{float:left; width:18px; height:18px; margin:6px 10px;}
+.shopCol li span{color:#b70000; line-height:32px;}
+.shopPic{width:181px; height:181px; margin-bottom:10px;}
+.shopBuy{display:block; width:179px; height:30px; overflow:hidden; margin:1px 1px 10px 1px; background:#7f7f7f; text-align:center; line-height:32px; color:#fff; font-size:14px;}
+.shopHom{width:183px; height:35px; overflow:hidden; text-align:center; line-height:30px;}
+.shopHom a{font-size:12px; color:#999;}
+.shopPeo{float:left; width:455px; height:20px; overflow:hidden; margin-bottom:10px; line-height:20px;}
+.shopPeo a{color:#999;}
+.shopPeo .people{float:left; margin-right:5px; font-size:12px;}
+.shopPeo .grade{float:left; display:block; width:37px; height:14px; overflow:hidden; background:url(../images/gradeBg.gif); text-align:center; line-height:14px; color:#ffffff; margin-top:3px;}
+.shopPeo .shopCla{float:right; margin-left:10px; font-size:12px;}
+.shopTxt{min-height:226px; height:auto; overflow:visible; display:none; font-size:14px; line-height:28px;}
+.shopTxtSmall{float:right; width:455px; height:196px; overflow:hidden; font-size:14px; line-height:28px;}
+.shopTxt a{color:#0154b9;}
+.shopMor{float:left; width:455px; height:30px; overflow:hidden; line-height:30px; background:#fff;}
+.shopMor a{float:left; cursor:pointer;}*/
+
+.shopCent{width:668px;}
+.shopPicBox{float:right; width:183px; margin-left:30px; margin-bottom:20px;}
+.shopPicBor{width:181px; border:3px solid #ffffff; position:relative;}
+.shopCol{width:182px; height:30px; overflow:hidden; background:#f5f5f5; border-bottom:1px solid #e5e5e5;}
+.shopCol li{float:left; width:80px; height:30px; overflow:hidden; border-right:1px solid #e5e5e5;}
+.shopCol li a{display:block;}
+.shopCol li img{float:left; width:18px; height:18px; margin:6px 10px;}
+.shopCol li span{color:#b70000; line-height:32px;}
+.shopPic{width:175px; height:175px; margin-bottom:10px;padding:3px;}
+.shopPicBor .shopImage {text-align: center;height: 191px;width: 181px;display: block;} 
+
+/*.shopBuy{display:block; width:179px; height:30px; overflow:hidden; margin:1px 1px 10px 1px; background:#7f7f7f; text-align:center; line-height:32px; color:#fff; font-size:14px;}
+.shopUrlList{width:179px; overflow:hidden; border-bottom:3px solid #d0d0d0; position:absolute; top:221px; left:1px; display:none;}
+.shopUrlList dt{width:179px; height:15px; overflow:hidden; background:url(../images/moreUrlBorder.gif) no-repeat center;}
+.shopUrlList dd{width:173px; height:34px; overflow:hidden; border-left:3px solid #d0d0d0; border-right:3px solid #d0d0d0; background:#ffffff;}
+.shopUrlList dd a{display:block; width:173px; height:33px; overflow:hidden; line-height:34px; text-align:center; font-size:14px; color:#666666;}
+.shopUrlList dd a:hover{background:#f7f7f7; border-bottom:1px solid #d0d0d0;}*/
+
+.shopBuy{display:block; width:181px; height:38px; overflow:hidden; background:#7f7f7f; text-align:center; line-height:38px; color:#fff; font-size:14px; border-radius:1px;}
+.shopBox:hover .shopBuy{background:#ff0000;}
+.shopBox:hover .shopPicBor{border:3px solid #ff0000;}
+.shopUrlList{width:187px; overflow:hidden; border-bottom:3px solid #d0d0d0; position:absolute; top:220px; left:-3px; display:none;z-index:10;}
+.shopUrlList dt{width:187px; height:15px; overflow:hidden; background:url(../images/moreUrlBorder.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/moreUrlBorder.gif*/ no-repeat center;}
+.shopUrlList dd{width:181px; height:34px; overflow:hidden; border-left:3px solid #d0d0d0; border-right:3px solid #d0d0d0; background:#ffffff;}
+.shopUrlList dd a{display:block; width:181px; height:33px; overflow:hidden; line-height:34px; text-align:center; font-size:14px; color:#666666;}
+.shopUrlList dd a:hover{background:#f7f7f7; border-bottom:1px solid #d0d0d0;}
+
+.haigou
+{ display:block; width:181px; height:38px; line-height:38px; text-align:center; background-color:#F89326; margin-top:6px; font-size:14px; color:#fff; border-radius:1px;
+}/*background-color:#ED9328;
+.shopBox:hover .haigou{ background-color:#2487C0;}*/
+
+.shopHom{width:183px; height:35px; overflow:hidden; text-align:center; line-height:30px;}
+.shopHom a{font-size:12px; color:#999;}
+.shopPeo{float:left; width:455px; height:20px; overflow:hidden; margin-bottom:10px; line-height:20px;}
+/*.shopPeo a{color:#999;}*/
+.shopPeo .people{float:left; margin-right:5px; font-size:12px;}
+.shopPeo .grade{float:left; display:block; width:37px; height:14px; overflow:hidden; background:url(../images/gradeBg.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/gradeBg.gif*/; text-align:center; line-height:14px; color:#ffffff; margin-top:3px;}
+.shopPeo .shopCla{float:right; margin-left:10px; font-size:12px;}
+.shopTxt{min-height:226px; height:auto; overflow:visible; display:none; font-size:14px; line-height:28px;font-family: 'Arial','simsun';}
+.shopTxtSmall{float:right; width:455px; height:196px; overflow:hidden; font-size:14px; line-height:28px;font-family: 'Arial','simsun'; }
+.shopTxt a{color:#0154b9;}
+.shopMor{float:left; width:455px; height:30px; overflow:hidden; line-height:30px; background:#fff;}
+.shopMor a{float:right; cursor:pointer;}
+.shopTxtSmallLong
+{ height:226px;
+}
+
+/*.shopFoot{width:646px; height:40px; overflow:hidden; margin-top:3px;  padding:0 10px; background:#f5f5f5; border:1px solid #e5e5e5;}
+.zanTxt{float:left; line-height:40px; margin-right:10px;}
+.zanBut{float:left; margin-right:20px; line-height:40px; cursor:pointer;}
+.zanBut img{float:left; width:18px; height:19px; margin:8px 5px auto 0;}
+.caiBut{float:left; margin-right:20px; line-height:40px; cursor:pointer;}
+.caiBut img{float:left; width:18px; height:19px; margin:13px 5px auto 0;}
+.kepBut{float:right; margin-left:20px; line-height:40px; cursor:pointer;}
+.kepBut img{float:left; width:18px; height:18px; margin:10px 5px auto 0;}
+.shopFen{float:left; height:40px; overflow:hidden; text-align:right; margin-top: 7px;}*/
+
+.shopFoot{width:646px; height:40px; overflow:hidden; margin-top:3px;  padding:0 10px; background:#f5f5f5; border:1px solid #e5e5e5;}
+.shopFen{float:left; height:40px; overflow:hidden; text-align:right;}
+.butBox{line-height:40px; cursor:pointer; color:#b70000;}
+.butBox span{margin-left:15px; padding:0px 10px;}
+.zanBut{float:left; margin-right:20px; background:url(../images/icon_hand.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/icon_hand.gif*/ no-repeat 0px -163px;}
+.zanOK{background-position: 0px -203px;}
+.caiBut{float:left; margin-right:20px; background:url(../images/icon_hand.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/icon_hand.gif*/ no-repeat 0px -237px;}
+.caiOK{background-position: 0px -277px;}
+.lunBut{float:right; margin-left:20px; background:url(../images/icon_hand.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/icon_hand.gif*/ no-repeat 0px -80px;}
+.lunOK{background-position: 0px -120px;}
+.kepBut{float:right; margin-left:20px; background:url(../images/icon_hand.gif) no-repeat 0px 0px;}
+.kepOK{background-position: 0px -40px;}
+
+/*本页特有样式*/
+.myPage{margin:-20px auto 30px auto;}
+
+
+
+#infscr-loading
+{
+	margin:-20px 0 50px 0;height:20px;
+}
+
+	#infscr-loading img
+	{
+		width:400px;height:20px;
+	}
+
+
+/*清除浮动*/
+html body li.xhClear, html body dd.xhClear, html body span.xhClear{width:0px;	height:0px; overflow:hidden; clear:both;}
+
+

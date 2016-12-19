@@ -1,0 +1,554 @@
+/* CSS Document */
+@charset "utf-8";
+* html{background-image:url(about:blank); background-attachment:fixed;} 
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+/*img{display: block;}*/
+ul, li, ol, dl, dt, dd{ list-style:none; }
+a{text-decoration:none; }
+body {color:#666; font:12px 'Arial','SimSun'; background:#F2F2F2 url(../images/webBg.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/webBg.gif*/;/* overflow-y:scroll;*/ }
+.iconimg
+{ background-image:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/; background-repeat:no-repeat;
+}
+.headLogo {background:url(../images/headLogo.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/headLogo.png*/}
+
+/*超链接*/
+.a0{color:#000;}
+.a3{color:#333;}
+.a6{color:#666;}
+.a9{color:#999;}
+.aF{color:#fff;}
+.aD{color:#ddd;}
+.aH{color:#b70000;}
+.aL{color:#0051ac;}
+.aX:hover{text-decoration:underline;}
+.p_detail a
+{
+	color:#0051ac;
+}
+.p_detail a:hover
+{
+	text-decoration:underline;
+}
+
+.fontH{font-size:16px; font-family:'Arial','Microsoft YaHei'; font-weight:bold;}
+.fontT{font-size:10px; font-weight:bold;}
+
+.colorH{color:#b70000;}
+.color3{color:#333333;}
+.color6{color:#666666;}
+.color9{color:#999999;}
+.colorL{color:#11b000;}
+
+/*class模块*/
+/*.headClass{width:114px; background:#cccccc; position:fixed; top:179px; left:50%; margin-left:-613px; _position: absolute; _bottom:auto; _top: expression(eval(document.documentElement.scrollTop)); _margin-top:194px; z-index:100;}
+
+.classTit{width:110px; height:32px; background:#f1f1f1; margin:1px 1px 0 1px; border:1px solid #fff; text-align:center; line-height:32px; font-size:14px; font-family:'Microsoft YaHei'; font-weight:bold; color:#666; position:relative;}
+.classTit a{display:block; cursor:pointer;}
+.classTitCurr{width:113px; height:34px; margin:1px 0 1px 1px; background:#ffffff; border:0px; line-height:34px;}
+.classTit .tjChild{visibility:hidden; width:80px; min-height:32px; padding:10px 0 10px 15px; border:1px solid #cccccc; border-left:0px; background:url(../images/childClaBg.gif); position:absolute; top:-1px; left:112px;}
+.classTitCurr .tjChild{visibility:visible;}
+.classTit .tjChild li{float:left; width:80px; height:30px; overflow:hidden; text-align:left; background:#fff url(../images/icon_02.gif) no-repeat 0px 14px;}
+
+.classTit .tjChild li a{margin-left:10px; color:#666; font-size:12px; line-height:30px;}
+#openClass{ cursor:pointer; border-bottom:1px solid #cccccc;}
+.hiddenLi{display:none;}
+
+.classList{width:114px; margin:1px 0; padding:5px 0; }
+.classList li{width:114px; height:25px;  line-height:26px; font-size:12px; position:relative; z-index:10;}
+.classList li a{display:block; padding-left:16px; color:#666;}
+.classList li img{float:left; width:14px; height:14px; margin:5px 7px 5px 0;}
+.classList li.curr a{color:#f61420;}
+.classList li .childCla{visibility:hidden; width:95px; min-height:30px; padding:10px 0 10px 10px; border:1px solid #cccccc; border-left:0px; background:url(../images/childClaBg.gif); position:absolute; top:0px; left:113px; z-index:9;}
+.classList li.curr .childCla{visibility:visible;}
+.classList li .childCla li{float:left; width:95px; height:25px; overflow:hidden; background:#fff;background: #fff url(../images/icon_02.gif) no-repeat 0px 12px;}
+.classList li .childCla li img{float:left; width:3px; height:3px; margin:11px 6px 11px 0;}
+.classList li .childCla li a{color:#666; font-size:13px; line-height:26px;padding-left:10px;}
+.classList li .childCla li a:hover{color: #f61420;}
+
+.classList{width:112px; margin:1px 0; padding:5px 0; background-color:#ffffff; border-left:1px solid #cccccc; border-right:1px solid #cccccc;}
+.classList li{width:112px; height:26px;  line-height:24px; font-size:12px; position:relative; z-index:10;background-image:url(../images/claBg_3.gif); background-repeat:no-repeat; }*/
+
+.headClass{width:114px; background:#cccccc; position:fixed; top:179px; left:50%; margin-left:-613px; _position: absolute; _bottom:auto; _top: expression(eval(document.documentElement.scrollTop)); _margin-top:194px; z-index:100;}
+
+.classTit{width:110px; height:32px; background:#f1f1f1; margin:1px 1px 0 1px; border:1px solid #fff; text-align:center; line-height:32px; font-size:14px; font-family:'Microsoft YaHei'; font-weight:bold; color:#666; position:relative;}
+.classTit a{display:block; cursor:pointer;}
+.classTitCurr{width:113px; height:34px; margin:1px 0 1px 1px; background:#ffffff; border:0px; line-height:34px;}
+.classTit .tjChild{visibility:hidden; width:80px; min-height:32px; padding:10px 0 10px 15px; border:1px solid #cccccc; border-left:0px; position:absolute; top:-1px; left:113px;background: #ffffff;}
+.classTitCurr .tjChild{visibility:visible;}
+.classTit .tjChild li{float:left; width:80px; height:30px; overflow:hidden; text-align:left; background:#fff url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -200px 13px;}
+
+.classTit .tjChild li a{margin-left:10px; color:#666; font-size:12px; line-height:30px;}
+#openClass{ cursor:pointer; border-bottom:1px solid #cccccc;}
+.hiddenLi{display:none;}
+
+.classList{width:112px; margin-left:1px; padding:5px 0;  background-color:#ffffff; border-top:1px solid #cccccc;}
+.classList li{width:113px; height:26px;  line-height:26px; font-size:12px; position:relative;z-index:10;}
+.classList li.curr{background:#ffffff; border-bottom:1px solid #cccccc; border-top:1px solid #cccccc;}
+.classList li a{display:block; padding-left:35px; color:#666;  font-size: 14px;font-family: "Microsoft YaHei","SimSun";}
+.classList li img{float:left; width:14px; height:14px; margin:5px 7px 5px 0;}
+.classList li.curr a{color:#f61420;}
+.classList li .childCla{background:#ffffff; visibility:hidden; width:95px; min-height:30px; padding:10px 0 12px 10px; border:1px solid #cccccc; border-left:0px; position:absolute; top:-1px; left:113px;}
+.classList li.curr .childCla{visibility:visible; z-index:0;}
+.classList li .childCla li{float:left; width:95px; height:25px; overflow:hidden; background:#fff;background:#fff url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -200px 11px;}
+.classList li .childCla li img{float:left; width:3px; height:3px; margin:11px 6px 11px 0;}
+.classList li .childCla li a{color:#666; font-size:13px; line-height:26px;padding-left:10px;}
+.classList li .childCla li a:hover{color: #f61420;}
+
+
+
+        
+.classList li a{display:block; padding-left:35px; color:#666;  font-size: 14px;font-family: "Microsoft YaHei","SimSun";}
+.classList li a:hover{color:#f61420;}
+.classList .classicon{width:62px; background-image:url(../images/class_icon.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/class_icon.gif*/; background-repeat:no-repeat;}
+.fc_fushixiebao .classicon{background-position:0px 0px;} .fc_fushixiebao .classicon:hover{background-position:-102px 0px;} .fc_fushixiebao.curr .classicon {background-position:-102px 0px;} .fc_fushixiebao.sct .classicon {background-position:-102px 0px;}
+.fc_diannaoshuma .classicon{background-position:0px -26px;} .fc_diannaoshuma .classicon:hover{background-position:-102px -26px;} .fc_diannaoshuma.curr .classicon {background-position:-102px -26px;} fc_diannaoshuma.sct .classicon {background-position:-102px -26px;}
+.fc_jiayongdianqi .classicon{background-position:0px -52px;} .fc_jiayongdianqi .classicon:hover{background-position:-102px -52px;} .fc_jiayongdianqi.curr .classicon {background-position:-102px -52px;} .fc_jiayongdianqi.sct .classicon {background-position:-102px -52px;}
+.fc_gehumeizhuang .classicon{background-position:0px -78px;} .fc_gehumeizhuang .classicon:hover{background-position:-102px -78px;} .fc_gehumeizhuang.curr .classicon {background-position:-102px -78px;} .fc_gehumeizhuang.sct .classicon {background-position:-102px -78px;}
+.fc_shipinbaojian .classicon{background-position:0px -104px;} .fc_shipinbaojian .classicon:hover{background-position:-102px -104px;} .fc_shipinbaojian.curr .classicon {background-position:-102px -104px;} .fc_shipinbaojian.sct .classicon {background-position:-102px -104px;}
+.fc_jiajujiazhuang .classicon{background-position:0px -130px;} .fc_jiajujiazhuang .classicon:hover{background-position:-102px -130px;} .fc_jiajujiazhuang.curr .classicon {background-position:-102px -130px;} .fc_jiajujiazhuang.sct .classicon {background-position:-102px -130px;}
+.fc_tushuyinxiang .classicon{background-position:0px -156px;} .fc_tushuyinxiang .classicon:hover{background-position:-102px -156px;} .fc_tushuyinxiang.curr .classicon {background-position:-102px -156px;} .fc_tushuyinxiang.sct .classicon {background-position:-102px -156px;}
+.fc_muyingyongpin .classicon{background-position:0px -182px;} .fc_muyingyongpin .classicon:hover{background-position:-102px -182px;} .fc_muyingyongpin.curr .classicon {background-position:-102px -182px;} .fc_muyingyongpin.sct .classicon {background-position:-102px -182px;}
+.fc_wanmoleqi .classicon{background-position:0px -208px;} .fc_wanmoleqi .classicon:hover{background-position:-102px -208px;} .fc_wanmoleqi.curr .classicon {background-position:-102px -208px;} .fc_wanmoleqi.sct .classicon {background-position:-102px -208px;}
+.fc_yundonghuwai .classicon{background-position:0px -234px;} .fc_yundonghuwai .classicon:hover{background-position:-102px -234px;} .fc_yundonghuwai.curr .classicon {background-position:-102px -234px;} .fc_yundonghuwai.sct .classicon {background-position:-102px -234px;}
+.fc_zhongbiaoshoushi .classicon{background-position:0px -260px;} .fc_zhongbiaoshoushi .classicon:hover{background-position:-102px -260px;} .fc_zhongbiaoshoushi.curr .classicon {background-position:-102px -260px;} .fc_zhongbiaoshoushi.sct .classicon {background-position:-102px -260px;}
+.fc_lvyoudujia .classicon{background-position:0px -286px;} .fc_lvyoudujia .classicon:hover{background-position:-102px -286px;} .fc_lvyoudujia.curr .classicon {background-position:-102px -286px;} .fc_lvyoudujia.sct .classicon {background-position:-102px -286px;}
+.fc_bangongshebei .classicon{background-position:0px -312px;} .fc_bangongshebei .classicon:hover{background-position:-102px -312px;} .fc_bangongshebei.curr .classicon {background-position:-102px -312px;} .fc_bangongshebei.sct .classicon {background-position:-102px -312px;}
+.fc_riyongbaihuo .classicon{background-position:0px -338px;} .fc_riyongbaihuo .classicon:hover{background-position:-102px -338px;} .fc_riyongbaihuo.curr .classicon {background-position:-102px -338px;} .fc_riyongbaihuo.sct .classicon {background-position:-102px -338px;}
+.fc_qicheyongpin .classicon{background-position:0px -364px;} .fc_qicheyongpin .classicon:hover{background-position:-102px -364px;} .fc_qicheyongpin.curr .classicon {background-position:-102px -364px;} .fc_qicheyongpin.sct .classicon {background-position:-102px -364px;}
+.fc_qitafenlei .classicon{background-position:0px -390px;} .fc_qitafenlei .classicon:hover{background-position:-102px -390px;} .fc_qitafenlei.curr .classicon {background-position:-102px -390px;} .fc_qitafenlei.sct .classicon {background-position:-102px -390px;} 
+.fc_youjishenghuo .classicon{background-position:0px -416px;} .fc_youjishenghuo .classicon:hover{background-position:-102px -416px;} .fc_youjishenghuo.curr .classicon {background-position:-102px -416px;} .fc_youjishenghuo.sct .classicon {background-position:-102px -416px;}
+/*.fc_01 .classicon{background-position:0px 0px;} .fc_01 .classicon:hover{background-position:-102px 0px;} .fc_01.curr .classicon {background-position:-102px 0px;} .fc_01.sct .classicon {background-position:-102px 0px;}
+.fc_07 .classicon{background-position:0px -26px;} .fc_07 .classicon:hover{background-position:-102px -26px;} .fc_07.curr .classicon {background-position:-102px -26px;} fc_07.sct .classicon {background-position:-102px -26px;}
+.fc_06 .classicon{background-position:0px -52px;} .fc_06 .classicon:hover{background-position:-102px -52px;} .fc_06.curr .classicon {background-position:-102px -52px;} .fc_06.sct .classicon {background-position:-102px -52px;}
+.fc_05 .classicon{background-position:0px -78px;} .fc_05 .classicon:hover{background-position:-102px -78px;} .fc_05.curr .classicon {background-position:-102px -78px;} .fc_05.sct .classicon {background-position:-102px -78px;}
+.fc_03 .classicon{background-position:0px -104px;} .fc_03 .classicon:hover{background-position:-102px -104px;} .fc_03.curr .classicon {background-position:-102px -104px;} .fc_03.sct .classicon {background-position:-102px -104px;}
+.fc_12 .classicon{background-position:0px -130px;} .fc_12 .classicon:hover{background-position:-102px -130px;} .fc_12.curr .classicon {background-position:-102px -130px;} .fc_12.sct .classicon {background-position:-102px -130px;}
+.fc_10 .classicon{background-position:0px -156px;} .fc_10 .classicon:hover{background-position:-102px -156px;} .fc_10.curr .classicon {background-position:-102px -156px;} .fc_10.sct .classicon {background-position:-102px -156px;}
+.fc_04 .classicon{background-position:0px -182px;} .fc_04 .classicon:hover{background-position:-102px -182px;} .fc_04.curr .classicon {background-position:-102px -182px;} .fc_04.sct .classicon {background-position:-102px -182px;}
+.fc_08 .classicon{background-position:0px -208px;} .fc_08 .classicon:hover{background-position:-102px -208px;} .fc_08.curr .classicon {background-position:-102px -208px;} .fc_08.sct .classicon {background-position:-102px -208px;}
+.fc_13 .classicon{background-position:0px -234px;} .fc_13 .classicon:hover{background-position:-102px -234px;} .fc_13.curr .classicon {background-position:-102px -234px;} .fc_13.sct .classicon {background-position:-102px -234px;}
+.fc_11 .classicon{background-position:0px -260px;} .fc_11 .classicon:hover{background-position:-102px -260px;} .fc_11.curr .classicon {background-position:-102px -260px;} .fc_11.sct .classicon {background-position:-102px -260px;}
+.fc_09 .classicon{background-position:0px -286px;} .fc_09 .classicon:hover{background-position:-102px -286px;} .fc_09.curr .classicon {background-position:-102px -286px;} .fc_09.sct .classicon {background-position:-102px -286px;}
+.fc_14 .classicon{background-position:0px -312px;} .fc_14 .classicon:hover{background-position:-102px -312px;} .fc_14.curr .classicon {background-position:-102px -312px;} .fc_14.sct .classicon {background-position:-102px -312px;}
+.fc_02 .classicon{background-position:0px -338px;} .fc_02 .classicon:hover{background-position:-102px -338px;} .fc_02.curr .classicon {background-position:-102px -338px;} .fc_02.sct .classicon {background-position:-102px -338px;}
+.fc_15 .classicon{background-position:0px -364px;} .fc_15 .classicon:hover{background-position:-102px -364px;} .fc_15.curr .classicon {background-position:-102px -364px;} .fc_15.sct .classicon {background-position:-102px -364px;}
+.fc_16 .classicon{background-position:0px -390px;} .fc_16 .classicon:hover{background-position:-102px -390px;} .fc_16.curr .classicon {background-position:-102px -390px;} .fc_16.sct .classicon {background-position:-102px -390px;}*/ 
+.classList li.curr a{color:#f61420;}
+.classList li.sct a{color:#f61420;}
+
+/*leftBox模块*/
+.leftBox{width:92px; height:112px; overflow:hidden; /*background:#ff0000;*/ position:fixed; top:225px; left:50%; margin-left:-592px; _position: absolute; _bottom:auto; _top: expression(eval(document.documentElement.scrollTop)); _margin-top:242px; z-index:100;}
+.leftKeep{display:block; width:92px; height:56px; overflow:hidden; background:url(../images/leftComFav.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/leftComFav.gif*/ no-repeat -141px 0px; color:#666666;}
+.leftTalk{display:block; width:92px; height:56px; overflow:hidden; background:url(../images/leftComFav.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/leftComFav.gif*/ no-repeat -141px -56px; color:#666666;}
+.leftBox span{display:block; width: 52px; height:36px; overflow:hidden; margin:10px 0px 0px 40px; text-align:center; line-height:18px; font-size:14px;}
+.leftBox a:hover{color:#f61420;}
+
+/*head模块*/
+.headBox{width:100%; background:url(../images/headBg.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/headBg.gif*/ repeat-x top; position:relative; z-index:1px;}
+.headBit{width:1000px;  margin:0 auto;}
+
+.headLogin{width:1000px; height:42px; margin-bottom: 3px;}
+.loginLeft{float:left; height:42px; line-height:44px; margin-right:15px;}
+
+.logQuick a {position: relative;top: 10px;display: block;width: 24px;height: 24px;background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat;}
+.logQuick a.txqq {background-position: -112px -1px;}
+.logQuick a.weixin {background-position: 0px 5px;}
+.logQuick a.txwb {background-position: -112px -25px;}
+.logQuick a.xlwb {background-position: -112px -49px;}
+
+.loginRight{float:right; height:24px; margin:8px 0 10px 10px;}
+.loginRight img{width:80px; height:24px;}
+
+.loginUser{float:right; height:42px; line-height:40px; cursor:pointer;text-align:center}
+.loginUser a{display:block; width:auto; margin:0px; padding:0 10px; _padding:0 7px;}
+.loginQian{width:61px; height:29px; margin:7px 0 auto 10px;background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ -183px -103px;display: block;}
+.loginBaoliao{width:65px; height:29px; margin:7px 0 auto 10px;background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ -112px -103px;display: block;}
+.loginIcon{float:left; width:13px; height:13px; margin:14px 5px 0 0;}
+.loginGrade{float:right; height:42px;}
+.loginGrade span{float:left; display:block; width:37px; height:14px; overflow:hidden; background:url(../images/gradeBg.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/gradeBg.gif*/; text-align:center; line-height:14px; color:#ffffff; margin-top:13px;}
+.loginInfo{position:relative; max-width:132px;}
+.loginInfo ul{width:132px; height:78px; overflow:hidden; margin:0px; padding:0px; visibility:hidden; position:absolute; left:0px; top:40px; background:#404040;}
+.loginInfo ul li{width:132px; height:40px; overflow:hidden; margin:0px; padding:0px; background:url(../images/userInfoChildLine.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/userInfoChildLine.gif*/ no-repeat bottom;}
+.loginInfo ul li a:hover{background:#f61420;}
+.loginRel{/*width:86px;*/ position:relative;}
+.loginRel ul{/*width:86px;*/ overflow:hidden; margin:0px; padding:0px; visibility:hidden; position:absolute; left:0px; top:-2px; background:#404040;}
+.loginRel ul li{/*width:86px;*/ height:40px; overflow:hidden; margin:0px; padding:0px; background:url(../images/userReleChildLine.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/userReleChildLine.gif*/ no-repeat top;}
+.loginRel ul li a{display:block;}
+.loginRel ul li a:hover{background:#f61420;}
+
+.headSearch{width:1000px; height:95px;}
+.headLogo{float:left; width:217px; height:95px;}
+.searchBox{float:right; width:500px; height:60px; overflow:hidden; margin-top:17px;}
+.searchBox dt{width:500px; height:40px; overflow:hidden;}
+.searchBox dd{width:500px; height:20px; overflow:hidden; line-height:20px;}
+.searchBox dd a{display:inline-block; margin-right:10px;}
+.searchText{float:left; width:439px; height:38px; overflow:hidden; padding:0 10px; border:1px solid #ccc; background:#fff; font-size:14px; line-height:38px; color:#666;}
+.searchButt{float:left; width:39px; height:40px; overflow:hidden; border:1px solid #ccc; border-left:0px; background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ -140px -1px; cursor:pointer;}
+
+.headMenu{width:1000px; height:40px; margin:0px; padding:0px; background:#f61420;}
+.headMenu li{float:left; width:110px; height:40px; text-align:center; line-height:40px; font-size:16px; font-family:'Arial','Microsoft YaHei'; font-weight:bold; color:#fff;}
+.headMenu li.line{background:url(../images/headMenuLine.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/headMenuLine.gif*/ no-repeat right;}
+.headMenu li.curr{background:#404040 url(../images/headMenuLine.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/headMenuLine.gif*/ no-repeat right;}
+.headMenu li.qian{float:right;}
+.headMenu li.qian img{width:110px; height:40px;}
+.headMenu li.userTit{float:right; width:280px;}
+.headMenu li.userTit img{width:280px; height:40px;}
+
+.headMenu li a{display:block; color:#fff;}
+.headMenu li.menuHome{position:relative;}
+.headMenu li.menuHome ul.headMenuChild{width:710px; height:46px; overflow:hidden; background:url(../images/menuChildBg.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/menuChildBg.gif*/; position:absolute; left:0px; top:34px; visibility:hidden;}
+.headMenu li.menuHome ul.headMenuChild li{float:left; width:auto; height:40px; overflow:hidden; margin-top:6px;}
+.headMenu li.menuHome ul.headMenuChild li a{display:block; margin-left:30px; font-size:12px; font-weight:normal; font-family:'SimSun';}
+
+/*foot模块*/
+.footBox{width:100%; overflow:hidden; margin-top:30px; background:#333;}
+
+.footCopy{width:100%; height:62px; overflow:hidden; background:url(../images/footLine_01.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/footLine_01.gif*/ repeat-x bottom;}
+.footCopy p{width:1000px; height:60px; margin:0 auto;}
+.footCopy p img{float:left; width:216px; height:60px;}
+.footCopy p span{float:right; line-height:62px; color:#a8a8a8;}
+.footCopy p a{color:#a8a8a8;}
+
+.footMenuBox{width:988px; overflow:hidden; margin:30px auto;}
+.footMenu{width:1000px; overflow:hidden; color:#a8a8a8;}
+.footMenu li{float:left; width:198px; overflow:hidden; background:url(../images/footLine_02.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/footLine_02.gif*/ no-repeat right top;}
+.footMenu li dl{width:168px; overflow:hidden; margin-left:38px;}
+.footMenu li dl dt{width:168px; height:20px; overflow:hidden; font-size:14px;margin-bottom: 10px;}
+.footMenu li dl dd{width:168px; height:20px; overflow:hidden; line-height:22px;background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -224px 9px;}
+
+.footMenu a{color:#a8a8a8;margin-left:18px;}
+
+/*page模块*/
+.pageBox{width:668px; height:29px; overflow:hidden; margin:0 auto;}
+.pageBox a{float:right; display:block; height:27px; overflow:hidden; margin-left:10px; padding:0 10px; background:#f5f5f5; border:1px solid #e5e5e5; line-height:28px; color:#666; font-size:14px;}
+.pageBox a.curr{border:1px solid #f61420;}
+.pageBox a span{float:left; /*margin-right:4px;*/}
+.pageBox a .pageUp{float:left; width:7px; height:13px; margin-top:7px; margin-right:4px;
+                   background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -182px -79px;
+}
+.pageBox a .pageDw{float:left; width:7px; height:13px; margin-top:7px; margin-left: 4px;
+                      background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -166px -79px;
+}
+.pageBox .pageMore{float:right; margin-left:10px; line-height:28px; color:#666; font-size:14px;}
+
+/*center框架*/
+.centBox{width:1000px; overflow:visible; margin:0 auto; position:relative; z-index:1;}
+/*.mainBox{float:left; width:718px; overflow:hidden; background:#fff; border:1px solid #e5e5e5; border-top:0px;}*/
+.mainBox{float:left; width:718px; overflow:hidden; background:#fff; }
+.mainBox2 {background:#fff; border:1px solid #e5e5e5; border-top:0px;overflow:hidden;}
+.sideBox{float:left; width:280px; overflow:visible;}
+
+/*gonggao模块*/
+.gonggao{width:260px; height:18px; overflow:hidden; margin:10px;}
+.gonggao dt{float:left; width:55px; height:18px; overflow:hidden; background:url(../images/gonggaoTit.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/gonggaoTit.gif*/ no-repeat left; position:relative;}
+.gonggao dt img.ggUp{width:9px; height:5px; position:absolute; top:3px; left:33px; cursor:pointer;}
+.gonggao dt img.ggDw{width:9px; height:5px; position:absolute; top:10px; left:33px; cursor:pointer;}
+.gonggao dd{float:left; width:205px; height:18px; overflow:hidden;}
+.gonggao dd div{width:210px; height:18px; overflow:hidden;}
+.gonggao dd div li{width:210px; height:18px; overflow:hidden; line-height:18px;}
+
+    
+
+/*sideButtom部分*/
+.sideBorder{width:279px; overflow:hidden; background:#faf8f4; border:1px solid #e5e5e5; border-left:0px;}
+.sideTit{width:279px; height:30px; overflow:hidden; margin:10px 0; border-bottom:1px solid #e5e5e5;}
+.sideTit span{float:left; margin-left:10px; line-height:30px;}
+.sideTit img{float:right; width:31px; height:7px; margin:15px 10px;
+             background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -140px -63px;
+}
+.sideTit .sideMore{float:right; width:31px; height:7px; margin:15px 10px;
+             background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -140px -63px;
+}
+
+.sideAct{width:259px; margin:0 auto 20px auto; position:relative;}
+.actMarquee{width:259px; height:303px; overflow:hidden;}
+.actContent{height:303px; overflow:hidden;}
+.act_259_303{float:left; width:259px; height:303px; overflow:hidden; margin-right:10px;}
+.act_259_303 p.actPic{width:259px; height:183px; overflow:hidden; position:relative;}
+.act_259_303 p.actPic img{width:259px; height:150px;}
+.act_259_303 p.actPic cite{position:absolute; bottom:0; left:0; width:259px; height:39px; overflow:hidden; background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ -1px -316px;color:#fff;font-size:12px;display:block;line-height:46px;text-align:center;font-style:normal;}
+.act_259_303 p.actCno{width:259px; height:40px; overflow:hidden; background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ -1px -357px;}
+.act_259_303 p.actCno img{float:left; width:14px; height:14px; margin:13px 5px 13px 0;
+                          background: #F5F5F5 url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -112px -79px;
+}
+.act_259_303 p.actCno span{float:left; line-height:40px; color:#999;display:block;
+                           width:14px; height:14px; margin:13px 5px 13px 0;
+                          background: #F5F5F5 url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -112px -79px;
+}
+.act_259_303 p.actTxt{width:259px; height:80px; overflow:hidden; line-height:20px;}
+.act_259_303 p.actTxt a{float:right;}
+.actBar{position:absolute;top:-30px;left:175px;clear:both;/*width:200px;*/height:12px;}
+.actBar ul{ clear:both;height:12px;}
+.actBar li{float:left;_display:inline;width:12px;height:12px;line-height:9px;text-align:center;color:#aa2116;font-family:Verdana, Arial, Helvetica, sans-serif;margin:0 4px;padding-top:0px;cursor:pointer;background:url(../channel/pictureBarBg.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/channel/pictureBarBg.png*/ no-repeat 0 0;text-indent:-999px;overflow:hidden;}
+.actBar li.active{background-position:0 -12px;color:#fff;}
+
+.sideShop{width:267px; height:267px; overflow:hidden; margin:10px 2px 12px 10px;}
+.sideShop li{float:left; width:79px; height:79px; overflow:hidden; margin:0 8px 8px 0; border:1px solid #e5e5e5; background:#fff;}
+.sideShop li img{max-width:77px; max-height:77px; margin:1px;}
+.sideShop li:hover{border:1px solid #ff0000}
+
+.sideShop li a {display: table-cell;width: 77px; height: 77px; text-align: center;vertical-align: middle;}
+
+.sideShaiBox{margin-bottom:20px;}
+.sideShai{width:259px; overflow:hidden; margin:0 auto 10px auto;}
+.sideShai li{width:259px; height:60px; overflow:hidden; margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #e5e5e5;}
+.sideShai li p.shaiPic{float:left; width:58px; height:58px; overflow:hidden; margin-right:10px; border:1px solid #e5e5e5; background:#fff;}
+.sideShai li p.shaiPic img{max-width:56px; max-height:56px; margin:1px;}
+.sideShai li p.shaiTxt{float:right; width:189px; line-height:20px;height: 50px;}
+.sideShai li  .like{float:right; margin-left:10px;}
+.shaiPic a {display: table-cell;width: 56px; height: 56px; text-align: center;vertical-align: middle;}
+
+.shopTxt a{color:#0051ac;}
+.shopTxt a:hover{text-decoration:underline;}
+.shopTxtSmall a{color:#0051ac;}
+.shopTxtSmall a:hover{text-decoration:underline;}
+
+.leftAD{margin:14px;}
+
+/*sidefly css******************************************/
+/*position之前的部分控制div的尺寸、背景、边框，后面不用改动*/
+#sideFly{top: 1300px;width:279px; background:#faf8f4; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;  _position: absolute; _bottom:auto; _top: expression(eval(document.documentElement.scrollTop)); _margin-top:0px; z-index:100;}
+
+/*go top css******************************************/
+.backToTop{width:36px; height:160px; position:fixed; left:50%; margin-left:550px; bottom:0px; margin-bottom:252px; _position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+.toTop{display:block; width:36px; height:80px; overflow:hidden; text-align:center; margin-top:1px; cursor:pointer; background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -224px -132px;}
+.toMail{display:block; width:36px; height:80px; overflow:hidden; text-align:center; margin-top:1px; cursor:pointer; background:url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat -224px -212px;}
+.backToTop span{line-height:16px; margin-top:40px; display:none; color:#666666;}
+
+.shopBox {color: #555;}
+.shopPeo  {color: #999;}
+
+.shopTxt img {max-width:600px;}
+/****************************************************************/
+
+
+/* main */
+
+.quickBox{width:280px; overflow:visible;}
+.quickBox div {overflow:visible;}
+.quickBox a {
+    overflow:hidden;
+    margin: 15px auto;
+}
+.appMidBox {width:245px; border-bottom: 1px solid #C8C8C8; margin: 0 auto;}
+.appLink {margin: 0 50px;display: block;width: 180px;height: 45px;}
+.androidLink {background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat;background-position: 0 -179px;}
+.androidLink:hover {background-position: 0 -134px;}
+.iosLink {background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat;background-position: 0 -269px;}
+.iosLink:hover {background-position: 0 -224px;}
+/*.appLink {margin: 0 50px;background: url(../images/biyabiindex.png) no-repeat;background-position: 0 -179px;display: block;width: 180px;height: 45px;}*/
+
+.quickBox a:hover{color:#f61420;}  
+
+
+
+/* main quickbox 改*/
+.attentionBox {
+height: 22px;
+line-height: 22px;
+}
+
+.attentionBox .boxImage {
+display: block;
+width: 35px;
+height: 20px;
+line-height: 20px;
+padding-left: 30px;
+background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat;
+float: left;
+margin-left:20px;
+}
+
+.attentionBox a:link, .attentionBox a:visited {
+color: #555;
+}
+
+.attentionBox .wxBox {
+width: 80px;
+float: left;
+position: relative;
+z-index: 9;
+}
+
+.attentionBox a.wx {
+background-position: 0px 0px;
+}
+.attentionBox a.wx:hover {
+background-position: 0px -20px;
+}
+.attentionBox a.sina {
+    background-position: 0 -40px;
+    width: 54px;
+}
+.attentionBox a.sina:hover {
+background-position: 0px -60px;
+}
+.attentionBox a.qq {
+    padding-left:25px;
+background-position: 0px -80px;
+}
+.attentionBox a.qq:hover {
+background-position: 0px -101px;
+}
+
+    .attentionBox a span {
+        position: relative;
+top: -5px;
+margin-left: 5px;
+    }
+
+.subSiteBg {
+background: url(../images/layerBg.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/layerBg.png*/ repeat;
+padding: 0 3px 3px;
+position: absolute;
+left: -3px;
+top: 41px;
+width: 103px;
+height: auto;
+
+}
+.subSiteBg a {color:#0051ac;}
+.subSiteBg a:link,.subSiteBg a:visited  {color:#0051ac;}
+.attentionBox .subSiteBg {
+width: 168px;
+padding: 3px;
+top: 45px;
+left: -40px;
+}
+.attentionBox a.rss {
+background-position: -147px -31px;
+padding-left: 27px;
+}
+.attentionBox .wxCodePic {
+width: 168px;
+height: 152px;
+background-color: #fff;
+text-align: center;
+padding-top:15px;
+}
+.attentionBox .wxCode {
+background-color: #fafafa;
+text-align: center;
+padding: 5px 0;
+}
+.attentionBox .upArrowSpan {
+display: block;
+width: 20px;
+height: 12px;
+position: absolute;
+left: 77px;
+top: -8px;
+background: url(../images/biyabiindex.png)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/biyabiindex.png*/ no-repeat 0px -122px;
+}
+
+/*购物导航*/
+.buydiv,.paydiv
+{ display:block; overflow:hidden; background-color:#fff; font-size:14px; font-family:Arial,Verdana,"\5FAE\8F6F\96C5\9ED1";
+}
+.buybar
+{ display:block; height:40px; margin:20px 10px; overflow:hidden;
+}
+.buybar li
+{ display:block; float:left; height:40px;
+}
+.barbee, .barbf6
+{ width:224px; text-align:center; line-height:40px; font-size:14px; color:#666; /*font: 16px/2.0 "微软雅黑";*/
+}
+.barbee
+{ background-color:#eee;
+}
+.barbf6
+{ background-color:#F61420; color:white;
+}
+.baref, .barfe, .baree
+{ width:27px;
+}
+.baref
+{ background-position:-29px -398px;
+}
+.barfe
+{ background-position:-1px -398px;
+}
+.baree
+{ background-position:-57px -398px;
+}
+
+
+/* 我的购物车 */
+.gwctxt
+{ position:relative; z-index:10; top:-30px; margin-right:10px;
+}
+.carticon
+{ display:block; width:32px; height:22px; background-position:-134px -410px; float:left; margin-right:4px; 
+}
+.gouwuche
+{ float:right; color:white; font-weight:bold; font-size:16px; font-family:"\5FAE\8F6F\96C5\9ED1"; height:40px; 
+}
+.gouwuchediv
+{ float:right; width:1000px; height:1px; position:relative;
+}
+.gouwuchebox
+{ display:none; border:solid 1px #ddd; box-shadow:0 0 5px rgba(0, 0, 0, 3); border-radius:4px; position:absolute; z-index:10; right:0px; top:5px; background-color:#fff;
+}
+.gouwucheul
+{ font-size:14px;
+}
+.gouwucheul li
+{ display:block; width:260px; background-color:#fff; padding:8px; border-bottom:solid 1px #ddd;
+}
+.gouwucheul li .spanimg
+{ display:table-cell; float:left; width:50px; height:50px; border:solid 1px #ddd; text-align:center; margin-right:8px;
+}
+.gouwucheul a:hover
+{ text-decoration:underline;
+}
+.spanimg a
+{ height:50px; width:50px; display:table-cell; vertical-align:middle;
+}
+.spanimg img
+{ max-height:50px; max-width:50px; display:block;
+}
+.gwctitle
+{ max-height:32px; line-height:16px; overflow:hidden; margin-bottom:4px; width:190px; float:left; display:block;
+}
+.gwctitle a
+{ color:#555;
+}
+.subp
+{ display:block; padding:4px; overflow:hidden; line-height:30px;
+}
+.gocart
+{ float:right; text-align:center; font-size:12px; display:block; background-color:#f61420; border:solid 1px #f61420; color:#fff; width:110px; height:30px; 
+  font-weight:bold; border-radius:2px; font-family:"\5FAE\8F6F\96C5\9ED1";
+}
+.gocart:hover
+{ cursor:pointer;
+}
+.bp
+{ overflow:hidden; position:relative; z-index:11; top:-14px;
+}
+.btop
+{ display:block; width:22px; height:14px; background-position:-172px -410px; float:right; margin-right:30px;
+}
+
+
+/*page title*/
+.titleNameBox {
+color: #333;
+padding: 20px 32px 16px 32px;
+border-bottom: 1px dotted #dfdfdf;
+font-family: "Microsoft YaHei","SimSun";
+}
+.titleNameBox h1 {
+font-size: 22px;
+font-weight: normal;
+margin-bottom: 10px;
+}
+/*.titleNameBox a {color: #ff0000;}*/
+.introWords {
+    font-family: SimSun;
+font-size: 12px;
+line-height:20px;
+color: #555;
+}

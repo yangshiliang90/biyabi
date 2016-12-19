@@ -1,0 +1,824 @@
+
+
+
+/*main*/
+/* CSS Document */
+@charset "utf-8";
+/*@import url("base.css");*/
+
+/*商品部分*/
+.shopBox
+{
+	width: 668px;
+	margin: 20px auto 20px auto;
+	position: relative;
+}
+
+.sxIcon
+{
+	width: 39px;
+	height: 55px;
+	position: absolute;
+	left: -20px;
+}
+
+.tzIcon
+{
+	width: 145px;
+	height: 71px;
+	position: absolute;
+	left: 440px;
+}
+
+.shopHead
+{
+	width: 668px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.shopHeadCurr
+{
+	width: 645px;
+	padding-left: 23px;
+}
+
+	.shopHeadCurr p
+	{
+		text-decoration: line-through;
+	}
+
+	.shopHeadCurr span
+	{
+		text-decoration: line-through;
+	}
+
+.shopTit
+{
+	width: 100%;
+	line-height: 30px;
+	color: #333;
+	font-size: 20px;
+	font-family: 'Arial','Microsoft YaHei';
+	font-weight: bold;
+}
+
+.shopJia
+{
+	float: left;
+	line-height: 22px;
+	color: #b70000;
+	font-size: 16px;
+	font-family: 'Arial','Microsoft YaHei';
+	font-weight: bold;
+}
+
+.shopDat
+{
+	float: right;
+	margin-right: 5px;
+	line-height: 22px;
+	color: #999;
+	font-size: 14px;
+}
+
+.shopCent
+{
+	width: 668px;
+	overflow: hidden;
+}
+
+.shopPicBox
+{
+	float: left;
+	width: 163px;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+.shopPicBor
+{
+	width: 161px;
+	overflow: hidden;
+	border: 1px solid #ffffff;
+}
+
+.shopCol
+{
+	width: 162px;
+	height: 30px;
+	overflow: hidden;
+	background: #f5f5f5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+	.shopCol li
+	{
+		float: left;
+		width: 80px;
+		height: 30px;
+		overflow: hidden;
+		border-right: 1px solid #e5e5e5;
+	}
+
+		.shopCol li a
+		{
+			display: block;
+		}
+
+		.shopCol li img
+		{
+			float: left;
+			width: 18px;
+			height: 18px;
+			margin: 6px 10px;
+		}
+
+		.shopCol li span
+		{
+			color: #b70000;
+			line-height: 32px;
+		}
+
+.shopPic
+{
+	width: 161px;
+	height: 161px;
+	margin-bottom: 10px;
+}
+
+.shopBuy
+{
+	display: block;
+	width: 159px;
+	height: 30px;
+	overflow: hidden;
+	margin: 1px 1px 10px 1px;
+	background: #7f7f7f;
+	text-align: center;
+	line-height: 32px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.shopHom
+{
+	width: 163px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 30px;
+}
+
+.shopPeo
+{
+	float: right;
+	width: 485px;
+	height: 20px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+
+	.shopPeo a
+	{
+		color: #999;
+	}
+
+	.shopPeo .people
+	{
+		float: left;
+		margin-right: 5px;
+		font-size: 12px;
+	}
+
+	.shopPeo .grade
+	{
+		float: left;
+		margin-top: 4px;
+	}
+
+	.shopPeo .shopCla
+	{
+		float: right;
+		margin-left: 10px;
+		font-size: 12px;
+	}
+
+.shopTxt
+{
+	height: auto;
+	overflow: visible;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+	.shopTxt a
+	{
+		color: #0154b9;
+	}
+
+.shopFoot
+{
+	width: 646px;
+	height: 40px;
+	overflow: hidden;
+	margin-top: 3px;
+	padding: 0 10px;
+	background: #f5f5f5;
+	border: 1px solid #e5e5e5;
+}
+
+.zanTxt
+{
+	float: left;
+	line-height: 40px;
+	margin-right: 10px;
+}
+
+.zanBut
+{
+	float: left;
+	margin-right: 20px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+	.zanBut img
+	{
+		float: left;
+		width: 18px;
+		height: 19px;
+		margin: 8px 5px auto 0;
+	}
+
+.caiBut
+{
+	float: left;
+	margin-right: 20px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+	.caiBut img
+	{
+		float: left;
+		width: 18px;
+		height: 19px;
+		margin: 13px 5px auto 0;
+	}
+
+.kepBut
+{
+	float: right;
+	margin-left: 20px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+	.kepBut img
+	{
+		float: left;
+		width: 18px;
+		height: 18px;
+		margin: 10px 5px auto 0;
+	}
+
+.shopFen
+{
+	float: left;
+	height: 40px;
+	overflow: hidden;
+	text-align: right;
+}
+
+/*评论模块*/
+.talkForm
+{
+	width: 668px;
+	height: 115px;
+	margin: 0 auto 20px auto;
+	position: relative;
+}
+
+.talkMask
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 668px;
+	height: 115px;
+	overflow: hidden;
+	/*background: url(../images/icon_14.png);*/
+	text-align: center;
+}
+
+	.talkMask p
+	{
+		line-height: 116px;
+		color: #666;
+	}
+
+.userBox
+{
+	float: left;
+	width: 80px;
+	height: 115px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+	.userBox p
+	{
+		width: 78px;
+		height: 78px;
+		overflow: hidden;
+		background: #fff;
+		border: 1px solid #e5e5e5;
+	}
+
+		.userBox p img
+		{
+			width: 76px;
+			height: 76px;
+			margin: 1px;
+		}
+
+	.userBox span
+	{
+		display: block;
+		width: 80px;
+		height: 30px;
+		overflow: hidden;
+		text-align: center;
+		line-height: 30px;
+	}
+
+.talkBox
+{
+	float: left;
+	width: 578px;
+}
+
+.talkText
+{
+	width: 566px;
+	height: 78px;
+	padding: 0 5px;
+	border: 1px solid #e5e5e5;
+	line-height: 20px;
+	font-size;
+	12px;
+	color: #666;
+}
+
+.talkButt
+{
+	float: right;
+	height: 30px;
+	overflow: hidden;
+	margin-top: 5px;
+	padding: 0 10px;
+	background: #f5f5f5;
+	border: 1px solid #e5e5e5;
+	line-height: 30px;
+	font-size: 14px;
+	color: #666;
+	cursor: pointer;
+}
+
+.talkFace
+{
+	float: left;
+	width: 70px;
+	height: 30px;
+	margin-top: 5px;
+	position: relative;
+}
+
+	.talkFace span
+	{
+		float: left;
+		line-height: 30px;
+		color: #b70000;
+	}
+
+.faceIcon
+{
+	float: left;
+	width: 21px;
+	height: 21px;
+	margin: 4px;
+}
+
+.faceList
+{
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	overflow: hidden;
+	padding: 10px 15px;
+	background: #f5f5f5;
+	border: 1px solid #e5e5e5;
+}
+
+	.faceList a
+	{
+		float: left;
+		cursor: pointer;
+	}
+
+	.faceList img
+	{
+		width: 30px;
+		height: 30px;
+		margin: 6px 10px 0px 0;
+	}
+
+.talkTit
+{
+	width: 668px;
+	height: 40px;
+	overflow: hidden;
+	margin: 0 auto 10px auto;
+	background: url(../images/talkListTit.gif)/*tpa=http://www.biyabi.com/biyabiweb/pic/images/talkListTit.gif*/;
+}
+
+	.talkTit p
+	{
+		float: left;
+		height: 39px;
+		overflow: hidden;
+		padding: 0 15px;
+		background: #fff;
+		border-top: 1px solid #f61420;
+		line-height: 40px;
+	}
+
+	.talkTit cite
+	{
+		float: right;
+		margin-right: 10px;
+		line-height: 40px;
+		font-style: normal;
+	}
+
+.talkList
+{
+	width: 668px;
+	overflow: hidden;
+	margin: 0 auto 10px auto;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #e5e5e5;
+}
+
+	.talkList dt
+	{
+		float: left;
+		width: 50px;
+		overflow: hidden;
+		margin-right: 10px;
+	}
+
+		.talkList dt img
+		{
+			width: 44px;
+			height: 44px;
+			border: 3px solid #e5e5e5;
+			margin-top: 3px;
+		}
+
+	.talkList dd
+	{
+		float: left;
+		width: 608px;
+		overflow: hidden;
+	}
+
+		.talkList dd p.userName
+		{
+			width: 608px;
+			height: 20px;
+			overflow: hidden;
+			margin-bottom: 8px;
+			line-height: 20px;
+			font-size: 12px;
+			color: #b70000;
+		}
+
+			.talkList dd p.userName span
+			{
+				float: right;
+				margin-right: 10px;
+				color: #999999;
+			}
+
+		.talkList dd p.talkTxt
+		{
+			width: 608px;
+			overflow: hidden;
+			margin-bottom: 8px;
+			font-size: 12px;
+			line-height: 20px;
+		}
+
+		.talkList dd span.talkDat
+		{
+			float: left;
+			color: #999;
+		}
+
+		.talkList dd span.talkZan
+		{
+			float: right;
+			color: #b70000;
+		}
+
+			.talkList dd span.talkZan a
+			{
+				margin: 0 10px;
+				color: #b70000;
+			}
+
+/*本页其他*/
+.tishiBox
+{
+	width: 666px;
+	overflow: hidden;
+	margin: 0 20px;
+	background: #f5f5f5;
+	border: 1px solid #e5e5e5;
+}
+
+	.tishiBox p
+	{
+		width: 636px;
+		overflow: hidden;
+		margin: 10px auto;
+		line-height: 24px;
+		color: #999;
+	}
+
+.shopTag
+{
+	width: 668px;
+	height: 40px;
+	overflow: hidden;
+	margin: 0 auto;
+	line-height: 40px;
+}
+
+	.shopTag span
+	{
+		font-weight: bold;
+	}
+
+.myPage
+{
+	margin: 20px auto 30px auto;
+}
+
+
+/*清除浮动*/
+html body li.xhClear, html body dd.xhClear, html body span.xhClear
+{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+/* CSS Document */
+* html
+{
+	background-image: url(about:blank);
+	background-attachment: fixed;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img
+{
+	margin: 0;
+	padding: 0;
+}
+
+fieldset, img
+{
+	border: none;
+}
+
+img
+{
+	display: block;
+}
+
+ul, li, ol, dl, dt, dd
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+/*body {color:#666; font:12px 'Arial','Microsoft YaHei'; background:#ffffff; }*/
+/* overflow-y:scroll;*/
+.fontH
+{
+	font-size: 16px;
+	font-family: 'Arial','Microsoft YaHei';
+	font-weight: bold;
+}
+
+.colorH
+{
+	color: #b70000;
+}
+
+
+
+
+/*注册*/
+.logPage
+{
+	width: 720px;
+	height: auto;
+	overflow: hidden;
+}
+
+	.logPage .logBox
+	{
+		width: 680px;
+		height: auto;
+		overflow: hidden;
+		margin: 10px 20px;
+	}
+
+	.logPage .titBox
+	{
+		width: 680px;
+		height: 40px;
+		overflow: hidden;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #cccccc;
+		line-height: 40px;
+	}
+
+	.logPage .titLeft
+	{
+		float: left;
+	}
+
+	.logPage .titRight
+	{
+		float: right;
+	}
+
+	.logPage .formBox
+	{
+		width: 670px;
+		height: 40px;
+		overflow: hidden;
+		margin-bottom: 2px;
+		margin-top: 20px;
+	}
+
+		.logPage .formBox dt
+		{
+			float: left;
+			width: 70px;
+			height: 40px;
+			overflow: hidden;
+			margin-right: 10px;
+			font-size: 14px;
+			text-align: right;
+			line-height: 40px;
+		}
+
+		.logPage .formBox dd
+		{
+			float: left;
+			width: 580px;
+			height: 40px;
+			overflow: hidden;
+		}
+
+			.logPage .formBox dd span
+			{
+				/*float:right; 
+		margin-right:30px;*/
+				line-height: 40px;
+				margin-left: 15px;
+			}
+
+	.logPage .formMore
+	{
+		width: 380px;
+		height: 20px;
+		overflow: hidden;
+		margin-left: 80px;
+		margin-bottom: 10px;
+		line-height: 20px;
+	}
+
+		.logPage .formMore span
+		{
+			float: left;
+			line-height: 20px;
+		}
+
+	.logPage .textBox1
+	{
+		float: left;
+		width: 340px;
+		height: 38px;
+		overflow: hidden;
+		padding: 0px 5px;
+		border: 1px solid #cccccc;
+		line-height: 38px;
+	}
+
+	.logPage .button1
+	{
+		float: left;
+		width: 100px;
+		height: 40px;
+		overflow: hidden;
+		border: 1px solid #b70000;
+		background: #f61420;
+		line-height: 38px;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.logPage .checkBox1
+	{
+		float: left;
+		margin-right: 5px;
+	}
+
+	.logPage .logQuick
+	{
+		width: 680px;
+		height: 40px;
+		overflow: hidden;
+		border-top: 1px solid #cccccc;
+	}
+
+		.logPage .logQuick dd
+		{
+			float: right;
+			width: 24px;
+			height: 24px;
+			overflow: hidden;
+			margin-top: 16px;
+			margin-left: 10px;
+		}
+
+		.logPage .logQuick dt
+		{
+			float: right;
+			height: 24px;
+			overflow: hidden;
+			line-height: 24px;
+			margin-top: 16px;
+		}
+
+	.logPage .layerError
+	{
+		padding-left: 80px;
+	}
+
+.imgVerifyCode
+{
+	margin: 10px 0 20px 80px;
+	width: 100px;
+}
+
+.docDetail
+{
+	line-height: 26px;
+	padding: 0;
+	color: #555;
+	font-size: 14px;
+	margin: 0 0 20px;
+	display: block;
+}
+
+/*清除浮动*/
+html body li.xhClear, html body dd.xhClear, html body span.xhClear
+{
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	clear: both;
+}

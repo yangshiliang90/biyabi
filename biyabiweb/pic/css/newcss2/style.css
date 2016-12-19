@@ -1,0 +1,1137 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    word-wrap:break-word;
+}
+html{
+    font-size:14px;
+    height:100%;
+}
+body{
+    width:100%;
+    font-size:14px;
+    font-family:"Microsoft YaHei";
+    overflow-x:hidden;
+}
+a,a:link,a:visited{
+    text-decoration:none;
+}
+.cl:after{
+    content:'.';
+    height:0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+.cl
+.clearfix{
+    zoom:1;
+}
+img{
+    display:block;
+    margin:0 auto;
+    width:100%;
+}
+.main{
+    width:100%;
+}
+.header{
+    width:100%;
+    height:75%;
+    background:url("../../images/newimages/top2.png")/*tpa=http://www.biyabi.com/biyabiweb/pic/images/newimages/top2.png*/ no-repeat;
+    background-size:100% 100%;
+    overflow:hidden;
+}
+.common-box{
+    max-width:1170px;
+    margin:0 auto;
+}
+.nav-out-box{
+    width:100%;
+    background:transparent;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:5;
+    transition:all 0.35s;
+    -webkit-transition:all 0.35s;
+}
+.nav-out-box.on{
+    background:rgba(241,50,57,0.9);
+    /*IE8下 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e5f13239,endColorstr=#e5f13239);
+}
+.header .nav{
+    padding:12px;
+}
+.nav .left-logo{
+    width:13%;
+    float:left;
+}
+.nav .right-menu{
+    width:50%;
+    height:100%;
+    float:right;
+}
+.nav .right-menu ul{
+    width:100%;
+    height:100%;
+}
+.nav .right-menu ul li{
+    width:25%;
+    height:100%;
+    float:left;
+    display:inline-block;
+    text-align:center;
+    line-height:37px;
+}
+.right-menu ul li > a{
+    color:#fff;
+    cursor:pointer;
+}
+.top-info{
+    width:45%;
+    margin:0 auto;
+    margin-top:100px;
+}
+.top-info .left-img{
+    width:33%;
+    float:left;
+}
+.top-info .right-download{
+    width:50%;
+    height:100%;
+    float:right;
+}
+.right-download > p{
+    width:100%;
+    color:#fff;
+    font-size:30px;
+    font-size:30px;
+    margin-top:20%;
+    letter-spacing:4px;
+}
+.right-download .scan-ewm{
+    width:100%;
+    margin-top:40px;
+}
+.scan-ewm .img-left{
+    width:40%;
+    float:left;
+}
+.scan-ewm .img-right{
+    width:40%;
+    float:left;
+}
+.scan-ewm .img-right > img{
+    width:60%;
+    margin-top:40%;
+}
+.scan-ewm .img-right > p{
+    width:100%;
+    text-align:center;
+    color:#fff;
+    margin-top:10px;
+}
+.download-btn{
+    width:100%;
+}
+.download-btn a{
+    width:40%;
+    float:left;
+    margin-top:40px;
+    cursor:pointer;
+}
+.download-btn a:last-of-type{
+    margin-left:5%;
+}
+/*全球尖货*/
+.jh-out-box{
+    width:100%;
+    padding:50px 0;
+    background:#f7f7f7;
+    padding-bottom:60px;
+}
+.global-goods > p{
+    width:100%;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+    font-size:35px;
+    color:#32373f;
+}
+.global-goods > div{
+    width:100%;
+}
+.global-goods .jh-box{
+    display:none;
+    /*opacity:0;*/
+}
+.global-goods .jh-box.on{
+    display:block;
+}
+.global-goods .jh-item{
+    width:50%;
+    float:left;
+}
+.jh-item > div{
+    width:49.8%;
+    float:left;
+}
+.jh-item .jh-text{
+    height:100%;
+    background:#fff;
+    border:1px solid #eee;
+}
+.jh-item .jh-text>p{
+    padding:0 25px;
+}
+.jh-item .jh-text .p-title{
+    padding:25px 25px 0;
+    font-size:18px;
+    line-height:24px;
+}
+.jh-item .jh-text .p-intro{
+    padding:0 25px;
+    font-size:14px;
+    line-height:22px;
+    color:#666;
+}
+.jh-item .jh-text .s-price{
+    padding:3px 8px;
+    display:inline-block;
+    background:#f53239;
+    color:#fff;
+    font-size:17px;
+    margin-top:10px;
+}
+.jh-item .jh-text .p-country{
+    margin-top:20px;
+}
+.jh-item .jh-text .p-country img{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    display:inline-block;
+    float:left;
+}
+.jh-item .jh-text .p-country span{
+    line-height:24px;
+    color:#999;
+    float:left;
+    margin-left:10px;
+}
+
+/*专场推荐*/
+.session-recommend{
+    text-align:center;
+}
+.session-recommend > p{
+    margin-top:70px;
+    margin-bottom:15px;
+}
+.session-recommend .sr-pl{
+    width:auto;
+    margin:0 auto;
+    text-align:center;
+    display:inline-block;
+}
+.sr-pl > span{
+    padding:5px 15px;
+    display:inline-block;
+    float:left;
+    margin-right:10px;
+    background:#f53239;
+    color:#fff;
+    border-radius:15px;
+}
+.ht-zp{
+    width:100%;
+    margin-top:20px;
+}
+.ht-zp > img{
+    width:50%;
+}
+
+/*物流信息*/
+.wl-info-box{
+    width:100%;
+    position:relative;
+    margin-top:50px;
+}
+.wl-info-box p{
+    width:50%;
+    position:absolute;
+    left:50%;
+    margin-left:-25%;
+    text-align:center;
+    font-size:35px;
+    top:10%;
+}
+
+/*客服团队*/
+.kf-box{
+    width:100%;
+    display:block;
+}
+.kf-box .kf-item{
+    float:left;
+    width:24.9%;
+    margin-top:30px;
+    text-align:center;
+}
+.kf-box .kf-item img{
+    width:60%;
+}
+
+/*用户晒单*/
+.sd-content{
+    width:100%;
+    display:block;
+    margin-top:30px;
+}
+.sd-content > div{
+    width:49%;
+    float:left;
+    padding-left:12px;
+}
+.sd-content .sd-content-left{
+    padding:0;
+    padding-right:12px;
+}
+.sd-content .big{
+    width:100%;
+}
+.sd-content .small-box{
+    width:100%;
+    display:block;
+}
+.sd-content .sd-content-left .small-box{
+    margin-top:10px;
+}
+.sd-content .sd-content-left .small-box .sd-item:nth-child(2) .sd-item-text > span{
+    padding-top:8px;
+}
+.small-box .sd-item{
+    width:49.1%;
+    float:left;
+    cursor:pointer;
+    padding-left:5px;
+}
+.small-box .sd-item:first-of-type{
+    padding:0;
+    padding-right:5px;
+}
+.sd-item .sd-item-text{
+    width:100%;
+    padding:10px 20px;
+    background:#fff;
+    border:1px solid #eee;
+    border-top:none;
+}
+.sd-item-text > img{
+    width:10%;
+    height:55px;
+    float:left;
+    display:inline-block;
+    margin:0;
+}
+.sd-item-text > span{
+    float:left;
+    display:inline-block;
+    width:85%;
+    height:55px;
+    padding:16px 0 16px 16px;
+    text-align:left;
+}
+.small-box .sd-item-text > img{
+    width:15%;
+}
+.sd-content .sd-content-right .small-box{
+    margin-bottom:10px;
+}
+.sd-item .sd-img-box{
+    position:relative;
+}
+.sd-item .sd-img-box .text-hidden{
+    position:absolute;
+    transition:all 0.35s;
+    -webkit-transition:all 0.35s;
+    width:100%;
+    height:40px;
+    padding:5px 10px;
+    background:rgba(245,67,72,0.5);
+    /*IE8下 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff54348,endColorstr=#7ff54348);
+    bottom:-40px;
+    left:0;
+    opacity:0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.text-hidden > img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    float:left;
+}
+.text-hidden > span{
+    float:left;
+    line-height:30px;
+    margin-left:10px;
+    color:#fff;
+}
+.sd-item:hover .sd-img-box .text-hidden{
+    opacity:1;
+    bottom:0;
+    /*IE8下 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7ff54348,endColorstr=#7ff54348);
+}
+
+/*底部二维码扫描*/
+.ewm-two{
+    margin-top:70px;
+    width:100%;
+    height:650px;
+    background:url("../../images/newimages/big-img2.png")/*tpa=http://www.biyabi.com/biyabiweb/pic/images/newimages/big-img2.png*/ no-repeat;
+    background-size:100% 100%;
+    position:relative;
+}
+.ewm-two .second-ewm-box{
+    width:50%;
+    height:100%;
+    margin:0 auto;
+}
+.second-ewm-box .left-ewm{
+    width:50%;
+    height:100%;
+    padding-top:150px;
+    float:left;
+}
+.second-ewm-box .left-ewm p.text{
+    font-size:35px;
+    text-align:left;
+    color:#fff;
+    letter-spacing:5px;
+}
+.second-ewm-box .left-ewm p.text span:last-of-type{
+    margin-left:30px;
+}
+.second-ewm-box .download-btn a {
+    width:35%;
+    margin-top:20px;
+}
+.second-ewm-box .ewm-img{
+    margin-top:40px;
+}
+.second-ewm-box .ewm-img img{
+    width:35%;
+    float:left;
+}
+.second-ewm-box .phone-img{
+    width:35%;
+    height:100%;
+    float:right;
+    position:relative;
+}
+.second-ewm-box .phone-img img{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+
+/*关注我们*/
+.attention-us{
+    text-align:center;
+    margin-top:70px;
+}
+.attention-us .float-div{
+    width:330px;
+    width:auto;
+    display:inline-block;
+    margin-bottom:20px;
+    margin-top:40px;
+}
+.attention-us .float-div a{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    float:left;
+    margin-right:50px;
+    display:inline-block;
+    cursor:pointer;
+    position:relative;
+}
+.attention-us .float-div a:last-of-type{
+    margin-right:0;
+}
+
+/**/
+.float-div a > .show-img,
+.right-img .wx-box .show-img{
+    position:absolute;
+    width:200px;
+    bottom:40%;
+    left:50%;
+    margin-left:-100px;
+    transition:all 0.7s;
+    -webkit-transition:all 0.7s;
+    opacity:0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+.float-div a:hover > .show-img,
+.right-img .wx-box:hover .show-img{
+    bottom:120%;
+    opacity:1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}
+
+.attention-us .link-text a{
+    font-size:15px;
+    font-weight:600;
+    color:#626262;
+    cursor:pointer;
+    margin-right:40px;
+}
+.attention-us .link-text a:last-of-type{
+    margin-right:0;
+}
+a:hover{
+    text-decoration:none;
+}
+
+.foot-line{
+    width:100%;
+}
+
+/*最底部*/
+.footer{
+    width:100%;
+}
+.footer p{
+    width:100%;
+    text-align:center;
+    color:#999;
+}
+
+
+/*关于我们页面*/
+/*顶部信息*/
+.header-about-us{
+    height:421px;   
+    padding:61px 0 0;
+    background:none;
+}
+.header-about-us .banner{
+    height:360px;
+    background:#f5323a url("../../images/newimages/top-img5.png")/*tpa=http://www.biyabi.com/biyabiweb/pic/images/newimages/top-img5.png*/ no-repeat 50% 50%;
+}
+.header-about-us .nav-out-box{
+    /*IE8下 */
+    background:#fff;
+    /*高级浏览器*/
+    background:rgba(255,255,255,1);
+}
+.header-about-us .nav-out-box.on{
+    /*IE8下 */
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#e5ffffff,endColorstr=#e5ffffff);
+    /*高级浏览器*/
+    background:rgba(255,255,255,0.9);
+
+}
+.header-about-us .right-menu ul li > a {
+    color:#000;
+}
+
+/*什么是比呀比海外购*/
+i{
+    font-style:normal;
+}
+.what-text p{
+    text-align:left;
+    font-size:15px;
+    line-height:24px;
+}
+.what-text p i{
+    font-weight:700;
+}
+.what-text p:first-of-type{
+    margin-bottom:20px;
+}
+.what-text > img{
+    margin-top:50px;
+}
+
+
+/*我们的团队*/
+.member-box ul{
+    width:100%;
+    margin-top:50px;
+}
+.member-box ul .member-item{
+    width:28%;
+    margin-right:7.9%;
+    position:relative;
+    float:left;
+    margin-bottom:60px;
+    overflow:hidden;
+}
+.member-box ul .member-item:nth-child(3n){
+    margin-right:0;
+}
+/* 兼容IE8 */
+.member-box ul li:first-child + li + li,
+.member-box ul li:first-child + li + li+li+li+li,
+.member-box ul li:first-child + li + li+li+li+li+li+li+li{
+    margin-right:0;
+}
+.member-item .member-description{
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:0;
+    padding:15px 12px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    text-align:left;
+}
+.member-item .show-first{
+    width:100%;
+    position:absolute;
+    left:0;
+    bottom:-200px;
+    padding:15px 12px;
+    background:rgba(0,0,0,0.5);    
+    /*IE8下 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+    color:#fff;
+    text-align:left;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+.member-item .show-first span{
+    font-size:16px;
+    margin-right:15px;
+}
+
+/*工作环境*/
+.hj-img{
+    margin-top:10px;
+}
+.work-env
+{
+    margin:10px 0 0;
+}
+.work-env img
+{
+    width:572px;
+}
+.work-env-nofirst
+{
+    margin:32px 0 0;
+}
+.media-box{
+    width:100%;
+    text-align:center;
+}
+.media-box .media-list{
+    width:auto;
+    margin:40px auto;
+}
+.media-box .media-list li{
+    float:left;
+    margin-right:20px;
+}
+.media-box .media-list li:last-of-type{
+    margin-right:0;
+}
+.media-list li img{
+    width:auto;
+    display:inline-block;
+    cursor:pointer;
+}
+
+/*联系我们盒子*/
+.contact-box{
+    display:block;
+    margin-top:100px;
+    zoom:1;
+}
+.contact-box:after{
+    content:' ';
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.contact-box .contact-item{
+    float:left;
+    width:33%;
+    text-align:center;
+}
+.contact-item .img-content > img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+}
+.contact-box .contact-item p:first-of-type{
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.about-hr{
+    margin-top:40px;
+}
+
+/*关于我们页面底部*/
+.about-footer{
+    width:100%;
+    padding:30px 0;
+}
+.about-footer-content{
+    width:60%;
+    margin:0 auto;
+}
+.about-footer .left-text{
+    width:60%;
+    float:left;
+}
+.about-footer .left-text .p2{
+    font-weight:bold;
+}
+.about-footer .right-img{
+    width:40%;
+    float:left;
+}
+.about-footer .right-img > div{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    position:relative;
+    float:right;
+    cursor:pointer;
+}
+.about-footer .right-img .sina-box{
+    margin-right:20px;
+}
+.right-img > div > img,
+.right-img > div a > img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:1;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+.right-img > div img.img2{
+    opacity:0;
+}
+.right-img > div:hover img.img1{
+    opacity:0;
+}
+.right-img > div:hover img.img2{
+    opacity:1;
+}
+.about-footer .right-img .p1{
+    width:100%;
+    text-align:right;
+    margin-top:80px;
+}
+.right-img .p1 a{
+    display:inline-block;
+    padding:0 15px;
+    border-right:1px solid #ddd;
+    color:#666;
+    font-weight:bold;
+}
+.right-img .p1 a:last-of-type{
+    padding-right:0;
+    border-right:none;
+}
+.right-img .p1 a:hover{
+    color:#f5323a;
+}
+/**/
+
+/*关于我们侧边导航栏*/
+.sliderBar{
+    width:160px;
+    padding:10px 0;
+    border:2px solid #aaa;
+    position:fixed;
+    left:100px;
+    top:550px;
+    background:#fff;
+    z-index:5;
+}
+.sliderBar > img{
+    position:absolute;
+    width:100%;
+    top:-41%;
+    left:0;
+    z-index:10;
+}
+.sliderBar ul,
+.sliderBar li{
+    width:100%
+}
+.sliderBar li{
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    cursor:pointer;
+}
+.sliderBar li a{
+    color:#333;
+    width:100%;
+    height:100%;
+    display:block;
+}
+.sliderBar li.active{
+    background:#f5323a;
+}
+.sliderBar li.active a{
+    color:#fff;
+}
+
+
+/*加入我们页面*/
+/*顶部*/
+.header-about-us.header-join-us{
+    background:none;
+}
+.header-join-us{
+    width:100%;
+    height:421px;
+    padding:61px 0 0;
+}
+.header-join-us .banner{
+    width:100%;
+    height:360px;
+    background:url("../../images/newimages/img24.jpg")/*tpa=http://www.biyabi.com/biyabiweb/pic/images/newimages/img24.jpg*/ no-repeat 50% 50%;
+}
+.header-join-us .banner .common-box{
+    text-align:center;
+    color:#fff;
+}
+.header-join-us .banner .common-box h1{
+    padding-top:110px;
+    margin-top:0;
+    font-size:36px;
+    letter-spacing:4px;
+}
+.header-join-us .banner .common-box h2{
+    font-size:22px;
+    margin:30px;
+}
+.header-join-us .banner .common-box h2:last-child{
+    font-weight:100;
+    letter-spacing:6px;
+}
+.header-join-us .banner >.common-box h2 .bg-red
+{
+    padding:10px 20px;
+    background:rgba(197, 26, 33, 0.8);
+    /*IE8下*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#c8c51a21,endColorstr=#c8c51a21);
+}
+.global-goods .know-us-content{
+    width:80%;
+    margin:0 auto;
+}
+.know-us-content > img{
+    width:32%;
+    float:left;
+    display:inline-block;
+    margin-right:20px;
+}
+.know-us-content > p:first-of-type{
+    padding-top:0;
+}
+.know-us-content > p{
+    font-size:15px;
+    letter-spacing:1px;
+}
+.know-us-content > p span{
+    font-weight:bold;
+    color:#f5323a;
+}
+.know-us-content > p i{
+    font-weight:bold;
+}
+/*办公环境*/
+.bghj-box{
+    margin-top:80px;
+}
+.bghj-box div{
+    margin:25px 0 0;
+}
+.bghj-box div:first-child{
+    margin:0;
+}
+.bghj-box .img1-1{
+    width:380px;
+}
+.bghj-box .img1-2{
+    width:770px;
+}
+.bghj-box .img2-1{
+    width:574px;
+}
+.bghj-box .img2-2{
+    width:573px;
+}
+/*美食诱惑*/
+.msyh-box{
+    margin-top:20px;
+}
+.msyh-box div{
+    margin:25px 0 0;
+}
+.msyh-box div:first-child{
+    margin:0;
+}
+.msyh-box .img1-1{
+    width:770px;
+}
+.msyh-box .img1-2{
+    width:380px;
+}
+.msyh-box .img2-1{
+    width:574px;
+}
+.msyh-box .img2-2{
+    width:573px;
+}
+/*各种活动*/
+.gzhd-box{
+    margin-top:20px;
+}
+/*招聘岗位*/
+.need-text p i{
+    font-weight:bold;
+}
+.global-goods .jobShow{
+    width:62%;
+    height:320px;
+    margin:60px auto;
+    position:relative;
+}
+.jobShow > a{
+    width:172px;
+    height:149px;
+    display:block;
+    position:absolute;
+    cursor:pointer;
+}
+.jobShow .scb{
+    left:0;
+    top:75px;
+}
+.jobShow .cpb{
+    left:138px;
+    top:-5px;
+}
+.jobShow .jsb{
+    left:138px;
+    top:155px;
+}
+.jobShow .yyb{
+    left:278px;
+    top:75px;
+}
+.jobShow .cwb{
+    left:416px;
+    top:-5px;
+}
+.jobShow .kfb{
+    left:416px;
+    top:155px;
+}
+.jobShow .xzb{
+    left:554px;
+    top:75px;
+}
+.zp{
+    width:100%;
+}
+.zp .job-title{
+    padding-bottom:12px;
+}
+.zp .job-title > img{
+    width:18px;
+    height:20px;
+    display:inline-block;
+    float:left;
+    margin-right:12px;
+    margin-top:6px;
+}
+.zp .job-title span{
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+}
+.job-scb .job-title{
+    border-bottom:2px dashed #54c782;
+}
+.job-scb .job-title span{
+    color:#54c782;
+}
+/*岗位手风琴*/
+.panel-group{
+    margin-top:15px;
+}
+.panel{
+    text-align:left;
+    margin-top:8px;
+}
+.panel-heading{
+    cursor:pointer;
+}
+.panel-body p{
+    text-align:left;
+}
+.panel .panel-heading{
+    position:relative;
+}
+.panel .panel-heading > img{
+    position:absolute;
+    width:15px;
+    height:15px;
+    right:15px;
+    top:11px;
+}
+.panel .panel-heading > img.jian{
+    width:16px;
+    height:3px;
+    top:17px;
+}
+/*市场部*/
+.job-scb .panel-default>.panel-heading{
+    background:#ddf4e6;
+}
+.job-scb .panel-body{
+    background:#ddf4e6;
+}
+.fontBold{
+    font-size:16px;
+    font-weight:bold;
+}
+/*产品部*/
+.job-cpb .job-title{
+    border-bottom:2px dashed #5ed2cb;
+}
+.job-cpb .job-title span{
+    color:#5ed2cb;
+}
+.job-cpb .panel-default>.panel-heading{
+    background:#dff6f5;
+}
+.job-cpb .panel-body{
+    background:#dff6f5;
+}
+/*技术部*/
+.job-jsb .job-title{
+    border-bottom:2px dashed #a7c256;
+}
+.job-jsb .job-title span{
+    color:#a7c256;
+}
+.job-jsb .panel-default>.panel-heading{
+    background:#edf3dd;
+}
+.job-jsb .panel-body{
+    background:#edf3dd;
+}
+/*运营部*/
+.job-yyb .job-title{
+    border-bottom:2px dashed #6aa4cc;
+}
+.job-yyb .job-title span{
+    color:#6aa4cc;
+}
+.job-yyb .panel-default>.panel-heading{
+    background:#e1edf5;
+}
+.job-yyb .panel-body{
+    background:#e1edf5;
+}
+/*财务部*/
+.job-cwb .job-title{
+    border-bottom:2px dashed #d6c23c;
+}
+.job-cwb .job-title span{
+    color:#d6c23c;
+}
+.job-cwb .panel-default>.panel-heading{
+    background:#f7f3d8;
+}
+.job-cwb .panel-body{
+    background:#f7f3d8;
+}
+/*客服部*/
+.job-kfb .job-title{
+    border-bottom:2px dashed #ee8426;
+}
+.job-kfb .job-title span{
+    color:#ee8426;
+}
+.job-kfb .panel-default>.panel-heading{
+    background:#fce6d4;
+}
+.job-kfb .panel-body{
+    background:#fce6d4;
+}
+/*行政部*/
+.job-xzb .job-title{
+    border-bottom:2px dashed #ee737e;
+}
+.job-xzb .job-title span{
+    color:#ee737e;
+}
+.job-xzb .panel-default>.panel-heading{
+    background:#fbe0e3;
+}
+.job-xzb .panel-body{
+    background:#fbe0e3;
+}
+/****/
+
+/*当屏幕分辨率小于1920的时候*/
+@media screen and (max-width:1910px){
+    .common-box{
+        width:1170px;
+        margin:0 auto;
+    }
+    .about-footer-content{
+        width:70%;
+    }
+}
+@media screen and (max-width:1430px){
+    .top-info .right-download {
+        width:60%;
+    }
+    .second-ewm-box .left-ewm {
+        width:60%;
+    }
+    .right-download .scan-ewm {
+        margin-top:20px;
+    }
+    .download-btn a {
+        margin-top:20px;
+    }
+    .ewm-two {
+        height:550px;
+    }
+    .top-info {
+        margin-top:80px;
+    }
+    .attention-us .float-div {
+        margin-top:40px;
+    }
+}
